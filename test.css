@@ -24,6 +24,7 @@ section p {
 /* == Header styles == */
 /* -- Nav content -- */
 header {
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     height: 50px;
@@ -41,16 +42,30 @@ nav a {
     text-transform: uppercase;
     color: #000;
 }
+button {
+    font-family: "opensans-regular", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    bottom: 32%;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+}
 /* == Container styles == */
 .container {
     width: 100%;
 }
-.content,
-.sidebar {
+/* -- Content section -- */
+.content {
     float: left;
     width: 70%;
 }
-/* -- Content section -- */
+.fullWidth {
+    width: 100%;
+}
 .content li {
     float: left;
     width: 30%;
@@ -72,6 +87,7 @@ nav a {
 }
 /* -- Sidebar content -- */
 .sidebar {
+    float: left;
     width: 30%;
 }
 /* == Footer styles == */
@@ -96,6 +112,9 @@ footer {
 @media only screen and (max-width: 767px) {
     body {
         font-size: .8em;
+    }
+    button {
+        bottom: 38%;
     }
     .content li {
         display: block;
