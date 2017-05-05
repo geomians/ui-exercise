@@ -62,6 +62,7 @@ button {
 .content {
     float: left;
     width: 70%;
+    transition: all .5s ease-in-out;
 }
 .fullWidth {
     width: 100%;
